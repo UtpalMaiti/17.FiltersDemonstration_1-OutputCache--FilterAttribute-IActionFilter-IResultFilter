@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Understanding the Concept of Filters...</h2>
+        <p>
+            <label>Controller Name : <b>@ViewBag.ControllerName</b></label>
+        </p>
+        <h2>Country List...</h2>
+        <ul>
+            @foreach(var c in ViewBag.CountryList)
+            {
+                <li>@c</li>
+            }
+        </ul>
+        <p>
+            <label>Current Time is : <b>@DateTime.Now</b></label>
+        </p>
+    </div>
+</body>
+</html>
